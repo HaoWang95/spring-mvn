@@ -41,11 +41,11 @@ public class Task {
         this.completed = false;
     }
 
+    // We are using hibernate, the prePersist and preUpdate annotation can generate the value automatically
     @PrePersist
     public void prePersist(){
-        LocalDate now = LocalDate.now();
         if(createdAt == null){
-            createdAt = now;
+            createdAt = LocalDate.now();
         }
         if(lastModifiedAt == null){
             lastModifiedAt = LocalDate.now();
