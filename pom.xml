@@ -95,7 +95,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<image>spring/${project.artifactId}</image>
+					<image>
+						<name>
+							spring/${project.artifactId}
+						</name>
+					</image>
 				</configuration>
 			</plugin>
 		</plugins>
