@@ -2,7 +2,7 @@ package com.spring.swagger.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EurekaDiscoveryClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
@@ -11,10 +11,10 @@ import java.util.List;
 @Component
 public class TaskDiscoveryClient {
     @Autowired
-    private DiscoveryClient discoveryClient;
+    private EurekaDiscoveryClient client;
 
     public ResponseEntity<List<ServiceInstance>> serviceInstanceByApplication(){
-        List<ServiceInstance> serviceInstances = discoveryClient.getInstances("taskService");
+        List<ServiceInstance> serviceInstances = client.getInstances("taskService");
         if (serviceInstances.isEmpty()){
             return null;
         }

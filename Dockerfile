@@ -16,3 +16,5 @@ COPY target/swagger-0.0.1-SNAPSHOT.jar swagger-0.0.1-SNAPSHOT.jar
 
 # 4. Define the entrypoint that execute the application
 ENTRYPOINT ["java", "-jar", "/swagger-0.0.1-SNAPSHOT.jar"]
+
+# 5. Define the endpoint or overwrite the port in docker-compose
