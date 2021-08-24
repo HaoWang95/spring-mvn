@@ -57,10 +57,10 @@
 		</dependency>
 
 		<!-- Dependency to enable bootstrap.yml after enabling spring cloud config client		-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bootstrap</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-bootstrap</artifactId>-->
+<!--		</dependency>-->
 
         <!-- Dependency for Spring Cloud Sleuth Distributed tracing		-->
 		<dependency>

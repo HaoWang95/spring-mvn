@@ -3,7 +3,6 @@ package com.spring.swagger.controller;
 import com.spring.swagger.model.Task;
 import com.spring.swagger.repository.TaskRepository;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
